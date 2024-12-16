@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polly Marketing Growth Plan 4.0</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: Montserrat,'Inter', sans-serif;
+            background-image: url("bg.jpg");
+            margin: 0;
+            padding: 0;
+            background-color: #141414;
+            color: #141414;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 100%;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #141414;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h4 {
+            color: #FFF;
+        }
+
+        h1 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .polly {
+            color: #69FFF6;
+            font-weight: bolder;
+            font-size: larger;
+        }
+        .section {
+            margin-bottom: 30px;
+            padding: 25px;
+            background-color: #F9F9F9;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            float: left;  
+            width: 40%;
+            margin-left: 20px;
+            margin-top: 20px;
+              }
+
+        .accordion {
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            float: right;
+            width: 50%;
+        }
+
+        .accordion-header {
+            cursor: pointer;
+            padding: 10px;
+            background-color: #f9f9f9;
+            font-weight: bold;
+            border-bottom: 1px solid #ccc;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .accordion-header:hover {
+            background-color: #141414;
+            color: #69FFF6;
+            
+        }
+
+        .accordion-header span {
+            font-size: 1.25rem;
+            transition: transform 0.3s ease;
+            color: #69FFF6;
+        }
+
+        .accordion-content {
+            display: none;
+            overflow: hidden;
+            padding: 10px;
+            animation: slideDown 0.5s ease forwards;
+        }
+
+        .accordion-content.open {
+            display: block;
+        }
+
+        @keyframes slideDown {
+            from {
+                max-height: 0;
+                opacity: 0;
+            }
+            to {
+                max-height: 500px;
+                opacity: 1;
+            }
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .grid-item {
+            background-color: #f5f5f5;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        canvas {
+            display: block;
+            margin: 10px auto;
+            width: 260px ;
+            height: 300px ;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Why Polly Section -->
+        <section class="section">
+            <h2><b class="polly">/ </b>Why Polly?</h2>
+            <p>Polly represents a transformative force in the mortgage industry, pioneering solutions that democratize access to cutting-edge tools for lenders of all sizes. This spirit of innovation aligns seamlessly with my expertise in leveraging data-driven marketing strategies to amplify brand presence and deliver measurable results. Together, we can further elevate Polly’s exceptional marketing efforts, ensuring its groundbreaking technologies reach a broader audience and deepen client engagement.</p>
+       
+            <h2><b class="polly">/ </b>Why Me?</h2>
+            <p>At Publicis Groupe, I successfully led digital marketing initiatives for global brands like Oracle, Toyota, and Hyatt, achieving results such as a 25% boost in Oracle’s PPC visibility and a 20% increase in organic traffic for Hyatt through targeted SEO strategies. At Northern Trust, I designed and implemented an inbound marketing strategy leveraging HubSpot, resulting in a 20% improvement in lead generation. My tenure at Google refined my ability to apply cutting-edge tools and analytics to create impactful marketing strategies. This combination of hands-on expertise, innovative thinking, and data-driven execution positions me as the ideal partner to elevate Polly’s marketing impact.</p>
+        </section>
+
+        <h1>IT'S NICE TO MEET YOU</h1>
+        <h4>I Am David Montano Expert in Digital Marketing and operations </h4>
+
+        <!-- Accordion Sections -->
+        <div class="accordion">
+            <div class="accordion-header">  1. Organic Traffic Growth (SEO) <span>+</span></div>
+            <div class="accordion-content">
+                <div class="grid">
+                    <div class="grid-item"><strong><b class="polly">/</b>Diagnosis:</strong> SEMrush data shows a 25% decline in organic traffic to 2,000 monthly visits. Polly’s authority score is 28, with 402 ranked keywords.SEMrush data shows a 25% decline in organic traffic to 2,000 monthly visits. Polly’s authority score is 28, with 402 ranked keywords.SEMrush data shows a 25% decline in organic traffic to 2,000 monthly visits. Polly’s authority score is 28, with 402 ranked keywords.</div>
+                    <div class="grid-item"><strong><b class="polly">/</b>Opportunity:</strong> Build content clusters around high-intent keywords and secure backlinks from authoritative sites to improve rankings.</div>
+                    <div class="grid-item"><strong><b class="polly">/</b>Experience:</strong> At Northern Trust, I led SEO strategies increasing organic traffic by 20% through targeted content and quality backlinks.</div>
+                </div>
+                <canvas id="organicTrafficChart"></canvas>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion-header">2. Paid Traffic Optimization (PPC) <span>+</span></div>
+            <div class="accordion-content">
+                <div class="grid">
+                    <div class="grid-item"><strong><b class="polly">/</b>Diagnosis:</strong> Paid search traffic grew 144%, but campaigns target only two keywords, limiting scalability.</div>
+                    <div class="grid-item"><strong><b class="polly">/</b>Opportunity:</strong> Expand keyword targeting, A/B test ads, and implement geo-targeting for better ROI.</div>
+                    <div class="grid-item"><strong><b class="polly">/</b>Experience:</strong> At Publicis Groupe, I optimized Oracle campaigns, increasing CTR by 25% and conversions by 15%.</div>
+                </div>
+                <canvas id="paidTrafficChart"></canvas>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion-header">3. Brand Awareness <span>+</span></div>
+            <div class="accordion-content">
+                <div class="grid">
+                    <div class="grid-item"><strong><b class="polly">/</b>Diagnosis:</strong> Branded traffic makes up only 9% of total traffic, indicating a need for stronger brand recognition.</div>
+                    <div class="grid-item"><strong><b class="polly">/</b>Opportunity:</strong> Launch thought leadership campaigns, webinars, and LinkedIn ads to enhance engagement and visibility.</div>
+                    <div class="grid-item"><strong><b class="polly">/</b>Experience:</strong> At Marc Jacobs, I led campaigns that increased engagement by 18% using storytelling and targeted content.</div>
+                </div>
+                <canvas id="brandAwarenessChart"></canvas>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion-header">4. Backlink and Authority Building <span>+</span></div>
+            <div class="accordion-content">
+                <div class="grid">
+                    <div class="grid-item"><strong><b class="polly">/</b>Diagnosis:</strong> Polly has 13.6K backlinks from 454 referring domains. There’s an opportunity to diversify link sources.</div>
+                    <div class="grid-item"><strong><b class="polly">/</b>Opportunity:</strong> Secure guest posts and backlinks from leading fintech and mortgage platforms.</div>
+                    <div class="grid-item"><strong><b class="polly">/</b>Experience:</strong> For Hyatt, I secured high-value backlinks that increased domain authority by 10 points.</div>
+                </div>
+                <canvas id="backlinkAuthorityChart"></canvas>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion-header">5. Event and Campaign Support <span>+</span></div>
+            <div class="accordion-content">
+                <div class="grid">
+                    <div class="grid-item"><strong><b class="polly">/</b>Diagnosis:</strong> Polly’s events and webinars are underutilized for lead nurturing and engagement.</div>
+                    <div class="grid-item"><strong><b class="polly">/</b>Opportunity:</strong> Implement integrated pre- and post-event campaigns for better follow-ups and conversion rates.</div>
+                    <div class="grid-item"><strong><b class="polly">/</b>Experience:</strong> At Publicis Groupe, I increased webinar attendance by 25% and generated 10% qualified leads.</div>
+                </div>
+                <canvas id="eventCampaignChart"></canvas>
+            </div>
+        </div>
+
+        <!-- Why Me Section -->
+       
+    </div>
+
+    <script>
+        document.querySelectorAll('.accordion-header').forEach((header, index) => {
+            header.addEventListener('click', () => {
+                const content = header.nextElementSibling;
+                const isOpen = content.classList.contains('open');
+
+                document.querySelectorAll('.accordion-content').forEach((item) => {
+                    item.classList.remove('open');
+                });
+
+                document.querySelectorAll('.accordion-header span').forEach((span) => {
+                    span.textContent = '+';
+                });
+
+                if (!isOpen) {
+                    content.classList.add('open');
+                    header.querySelector('span').textContent = '-';
+                    initializeChart(index);
+                }
+            });
+        });
+
+        const chartConfig = (id, labels, data, label) => {
+            new Chart(document.getElementById(id), {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: label,
+                        data: data,
+                        backgroundColor: 'rgba(1, 255, 240, 0.6)',
+                        borderColor: '#01FFF0',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    aspectRatio: 2,
+                    scales: { y: { beginAtZero: true } }
+                }
+            });
+        };
+
+        function initializeChart(index) {
+            const charts = [
+                ['organicTrafficChart', ['Current', 'Potential'], [2000, 3000], 'Organic Traffic'],
+                ['paidTrafficChart', ['Current', 'Potential'], [144, 300], 'Paid Traffic'],
+                ['brandAwarenessChart', ['Current', 'Potential'], [9, 30], 'Branded Traffic'],
+                ['backlinkAuthorityChart', ['Current', 'Potential'], [13600, 20000], 'Backlinks'],
+                ['eventCampaignChart', ['Current', 'Potential'], [25, 40], 'Event Engagement']
+            ];
+            chartConfig(...charts[index]);
+        }
+    </script>
+</body>
+</html>
